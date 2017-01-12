@@ -9,6 +9,14 @@ There exists an organization-wide project "[Issues open to volunteer contributor
 ![Project screenshort](project_screenshot.png)
 
 
+## Working with issues
+
+You can take any issues and start working on it. Don't wait for too much instructions, and don't hesitate to propose code and pull request.
+
+## Promote this repositories
+
+Don't hesitate to spread the word and invite other developpers to contribute. If you are already member of [JLM 2017 organization](https://github.com/jlm2017) on Github, you can set your membership to "public" so people see we are a lot of contributors !
+
 ## Contact
 
 You can contact JLM 2017 team and other volunteers on http://chat.coders.jlm2017.fr. [@guilrobis](https://twitter.com/guilrobis) is the admin from the JLM 2017 staff.
