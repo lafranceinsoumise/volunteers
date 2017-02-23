@@ -14,7 +14,7 @@ Il existe un projet d'organisation [Issues open to volunteer contributors](https
 Vous pouvez vous attaquer à n'importe quel ticket et travailler dessus. N'attendez pas les consignes, n'hésitez pas à proposer du code et faire des pull request.  
 *You can take any issues and start working on it. Don't wait for too much instructions, and don't hesitate to propose code and pull request.*
 
-## Promouvoir ces déptôs *Promote this repositories*
+## Promouvoir ces dépôts *Promote this repositories*
 
 N'hésitez pas à faire passer l'information et inviter d'autres développeu.se.r.s à contribuer. Si vous êtes déjà membre de l'organisation Github, vous pouvez passez votre membership en "public" de manière à ce que l'on voit que nous sommes beaucoup de contribut.eur.rice.s.  
 *Don't hesitate to spread the word and invite other developpers to contribute. If you are already member of [JLM 2017 organization](https://github.com/jlm2017) on Github, you can set your membership to "public" so people see we are a lot of contributors !*
