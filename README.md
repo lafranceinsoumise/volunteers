@@ -3,12 +3,6 @@
 Projet visant à aider les volontaires à contribuer.  
 *Project for helping volunteer coders to contribute.*
 
-Il existe un projet d'organisation [Issues open to volunteer contributors](https://github.com/orgs/jlm2017/projects/2). (GitHub ne permet pas les projets d'organisation publics.) Merci de demander une invitation pour [JLM 2017](https://github.com/jlm2017) pour voir ce projet. Contactez [@guilrobis](https://twitter.com/guilrobis) pour demander une invitation.  
-*There exists an organization-wide project "[Issues open to volunteer contributors](https://github.com/orgs/jlm2017/projects/2)". GitHub does not allow public organization project. You should request a membership to [JLM 2017 organization](https://github.com/jlm2017) to see the project. Contact [@guilrobis](https://twitter.com/guilrobis) to request an invite.*
-
-![Project screenshort](project_screenshot.png)
-
-
 ## Travailler avec les tickets *Working with issues*
 
 Vous pouvez vous attaquer à n'importe quel ticket et travailler dessus. N'attendez pas les consignes, n'hésitez pas à proposer du code et faire des pull request.  
@@ -16,5 +10,5 @@ Vous pouvez vous attaquer à n'importe quel ticket et travailler dessus. N'atten
 
 ## Promouvoir ces dépôts *Promote this repositories*
 
-N'hésitez pas à faire passer l'information et inviter d'autres développeu.se.r.s à contribuer. Si vous êtes déjà membre de l'organisation Github, vous pouvez passez votre membership en "public" de manière à ce que l'on voit que nous sommes beaucoup de contribut.eur.rice.s.  
-*Don't hesitate to spread the word and invite other developpers to contribute. If you are already member of [JLM 2017 organization](https://github.com/jlm2017) on Github, you can set your membership to "public" so people see we are a lot of contributors !*
+N'hésitez pas à faire passer l'information et inviter d'autres développeu.se.r.s à contribuer.
+*Don't hesitate to spread the word and invite other developpers to contribute.
