@@ -1,5 +1,6 @@
 digraph plan {
     rankdir = LR;
+    mindist = 1.5;
     node [shape=box];
 
     subgraph cluster_menu_principal {
@@ -15,9 +16,10 @@ digraph plan {
         menu_blog[label="Blog"];
     }
 
-    subgraph cluster_site_principal {
+    subgraph site_principal {
         label = "lafranceinsoumise.fr";
-        accueil [label="Page d'accueil"];
+        node [style=filled,color=coral];
+        accueil [label="Page d'accueil"; penwidth=3.0; style=bold];
         actus [label="Page d'actus principale"];
         actus_jlm [label="Actus JLM"];
         actus_video[label="Actus Vidéo"];
@@ -33,9 +35,10 @@ digraph plan {
         {actus; actus_programme; jlmdesintox; actus_AN; pages_deputes} -> actus_articles;
     }
 
-    subgraph cluster_agir {
+    subgraph site_agir {
         label = "agir.lafranceinsoumise.fr";
-        sous_menu [label="Sous-menu"; shape=ellipse];
+        node [style=filled,color=royalblue];
+        sous_menu [label="Sous-menu site agir"; shape=ellipse];
         agir [label="J'agis"];
         profil [label="J'en dis plus sur moi"];
         agenda_orateurs [label="Agenda des orateurs nationaux"];
@@ -62,6 +65,13 @@ digraph plan {
         dons [label="dons.lafranceinsoumise.fr"];
         materiel [label="materiel.lafranceinsoumise.fr"];
         legislatives [label="legislatives.jlm2017.fr"];
+        blog_melenchon [label="melenchon.fr"];
+    }
+
+    subgraph cluster_legend {
+        site_principal_legend [label="lafranceinsoumise.fr"; style=filled; color=coral];
+        site_agir_legend [label="agir.lafranceinsoumise.fr"; style=filled; color=royalblue];
+        autres_sites_legend [label="Autres sites"];
     }
 
 
@@ -73,4 +83,6 @@ digraph plan {
     menu_donner -> dons;
     menu_legislatives -> legislatives;
     medias -> {facebook; twitter; youtube}
+    carte_principale -> {page_evenement; page_groupe}
+    menu_blog -> blog_melenchon
 }
