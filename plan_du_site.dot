@@ -1,0 +1,76 @@
+digraph plan {
+    rankdir = LR;
+    node [shape=box];
+
+    subgraph cluster_menu_principal {
+        rank=source;
+        label = "Menu principal (toutes les pages)";
+        node [shape=ellipse];
+        menu_actus[label="Actus"];
+        menu_programme[label="Le programme"];
+        menu_agenda[label="Agenda"];
+        menu_agir[label="J'agis"];
+        menu_donner[label="Je donne"];
+        menu_legislatives[label="Législatives"];
+        menu_blog[label="Blog"];
+    }
+
+    subgraph cluster_site_principal {
+        label = "lafranceinsoumise.fr";
+        accueil [label="Page d'accueil"];
+        actus [label="Page d'actus principale"];
+        actus_jlm [label="Actus JLM"];
+        actus_video[label="Actus Vidéo"];
+        jlmdesintox [label="#JLMDesintox"];
+        actus_AN [label="Actus de l'Assemblée Nationale"];
+        pages_deputes [label="Actus par député"; peripheries=2];
+        actus_programme [label="Actus programme"];
+        actus_articles [label="Articles d'actualités",peripheries=3];
+        carte_principale [label="Carte des événements et groupes d'appui"];
+
+        accueil -> {carte_principale; outils; actus; medias; actus_AN};
+        actus -> actus_AN -> pages_deputes;
+        {actus; actus_programme; jlmdesintox; actus_AN; pages_deputes} -> actus_articles;
+    }
+
+    subgraph cluster_agir {
+        label = "agir.lafranceinsoumise.fr";
+        sous_menu [label="Sous-menu"; shape=ellipse];
+        agir [label="J'agis"];
+        profil [label="J'en dis plus sur moi"];
+        agenda_orateurs [label="Agenda des orateurs nationaux"];
+        agenda_evenements_locaux [label="Agenda des événements locaux"];
+        agenda_melenchon [label="Agenda JLM"];
+        mes_groupes [label="Mes groupes d'appui"];
+        mes_evenements [label="Mes événements"];
+        page_evenement [label="Pages événements", peripheries=3];
+        page_gestion_evenement [label="Pages de gestion des événements",peripheries=3];
+        creer_evenement [label="Créer un événement"];
+        page_groupe [label="Pages groupes d'appui", peripheries=3];
+        page_gestion_groupe  [label="Pages de gestion des groupes",peripheries=3];
+        creer_groupe [label="Créer un groupe"];
+
+        sous_menu -> { agir; profil; mes_groupes; mes_evenements }
+        mes_groupes -> {page_groupe; page_gestion_groupe; creer_groupe}
+        mes_evenements -> {page_evenement; page_gestion_evenement; creer_evenement}
+    }
+
+    subgraph autres_sites {
+        rank = max;
+        label = "Autres sites";
+        avenirencommun [label="avenirencommun.fr"];
+        dons [label="dons.lafranceinsoumise.fr"];
+        materiel [label="materiel.lafranceinsoumise.fr"];
+        legislatives [label="legislatives.jlm2017.fr"];
+    }
+
+
+    accueil -> { avenirencommun; dons; agenda_orateurs }
+    menu_actus -> { actus; jlmdesintox; actus_jlm ; actus_video; actus_programme }
+    menu_programme -> avenirencommun;
+    menu_agenda -> {agenda_melenchon; agenda_orateurs; agenda_evenements_locaux}
+    menu_agir -> {agir; materiel; carte_principale; creer_evenement; dons}
+    menu_donner -> dons;
+    menu_legislatives -> legislatives;
+    medias -> {facebook; twitter; youtube}
+}
