@@ -1,7 +1,14 @@
 # Volunteers
 
-Projet visant à aider les volontaires à contribuer.  
+Projet visant à aider les volontaires à contribuer.
 *Project for helping volunteer coders to contribute.*
+
+La partie visible des outils numériques de la France insoumise repose essentiellement sur deux projets :
+
+* un projet Django pour le site [agir.lafranceinsoumise.fr](https://agir.lafranceinsoumise.fr)
+* un projet Wordpress pour le site [lafranceinsoumise.fr](https://lafranceinsoumise.fr)
+
+Le [Plan du site](https://github.com/lafranceinsoumise/volunteers/blob/master/plan_du_site.pdf) expose quelles parties du site correspondent à chaque projet.
 
 ## Travailler avec les tickets *Working with issues*
 
